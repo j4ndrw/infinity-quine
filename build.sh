@@ -19,4 +19,4 @@ rm ./scripts/compile-quine
 rm ./codegen/infinity-quine.c
 mv ./codegen/compiled-infinity-quine.c ./codegen/infinity-quine.c
 
-cc -Wall -Wextra -include stdio.h -include string.h codegen/infinity-quine.c -o ./build/infinity-quine
+cc -Wall -Wextra -include stdio.h -include stdlib.h -include unistd.h codegen/infinity-quine.c -o ./build/infinity-quine
